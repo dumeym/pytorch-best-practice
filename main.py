@@ -50,6 +50,7 @@ def train(**kwargs):
     vis = Visualizer(opt.env)
 
     # step1: configure model
+    # dm edit on 20200523
     model = getattr(models, opt.model)()
     if opt.load_model_path:
         model.load(opt.load_model_path)
